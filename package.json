@@ -1,0 +1,25 @@
+{
+  "name": "super_test",
+  "version": "1.0.0",
+  "description": "SuperTest API Demo Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sand5/super_test_demo_project.git"
+  },
+  "keywords": [
+    "API",
+    "Testing",
+    "SuperTest",
+    "REST"
+  ],
+  "author": "Sanderson Kwabena Imbeah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sand5/super_test_demo_project/issues"
+  },
+  "homepage": "https://github.com/Sand5/super_test_demo_project#readme"
+}
