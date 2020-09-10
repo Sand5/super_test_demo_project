@@ -1,0 +1,10 @@
+{
+
+  //Need this config to make auto complete intellisense work
+    "include": [
+      "**/*.js",
+      "**/*.json",
+      "node_modules/@wdio/sync",
+      "node_modules/@wdio/mocha-framework"
+    ]
+  }
