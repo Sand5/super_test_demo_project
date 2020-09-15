@@ -1,4 +1,4 @@
-const supertest = require("supertest");
+/*const supertest = require("supertest");
 const expect = require("chai").expect;
 
 let baseURL = supertest("https://reqres.in");
@@ -10,7 +10,6 @@ describe("POST Request", () => {
   it("Makes a POST call", async () => {
     post_resp = await baseURL
       .post(list_user_endpoint)
-
       .type("form")
       .send({
         name: "Kwabena",
@@ -26,3 +25,4 @@ describe("POST Request", () => {
     console.log(post_resp.status);
   });
 });
+*/
