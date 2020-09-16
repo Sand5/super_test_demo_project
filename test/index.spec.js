@@ -6,7 +6,7 @@ let baseURL = supertest(app);
 let res;
 
 describe("GET /", () => {
-  it.skip("it should have a status code of 200", async () => {
+  it("it should have a status code of 200", async () => {
     res = await baseURL.get("/");
     console.log(res.text);
 
@@ -14,7 +14,7 @@ describe("GET /", () => {
     expect(res.text).to.contain("loop");
   });
 
-  it.skip("POST/ this test case is checking the post request", async () => {
+  it("POST/ this test case is checking the post request", async () => {
     res = await baseURL
       .post("/")
       .send({ name: "John" })
