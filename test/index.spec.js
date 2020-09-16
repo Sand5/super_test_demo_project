@@ -20,7 +20,7 @@ describe("GET /", () => {
       .send({ name: "John" })
       .set("Accept", "/application/json/");
 
-    expect(res.status).to.equal(200);
-    console.log(res.body);
+     expect(res.status).to.equal(200);
+     console.log(res.body);
   });
 });
