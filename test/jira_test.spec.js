@@ -10,7 +10,7 @@ beforeEach(() => {
   testSession = supertest("http://localhost:8080");
 });
 
-describe("Jira Comments Test", () => {
+describe.skip("Jira Comments Test", () => {
   it("I should be able to log into Jira", async () => {
     res = await testSession
       .post(loginresource)
@@ -19,7 +19,6 @@ describe("Jira Comments Test", () => {
         password: "Sandy82@",
       })
       .set("Content-type", "application/json");
-    //console.log(res);
     console.log(res.status)
     expect(res.status).to.equal(200);
 
