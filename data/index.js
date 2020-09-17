@@ -18,6 +18,7 @@ server.post("/", (req, res) => {
   } else {
     res.json({ input: name });
   }
+  
 });
 
 module.exports = server;

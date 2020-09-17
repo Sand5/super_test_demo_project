@@ -5,14 +5,14 @@ let baseURL = supertest("https://reqres.in");
 let list_user_endpoint = "/api/users";
 
 describe("POST Request", () => {
-  let post_resp;
+  let post_resp =null;
 
   it("Makes a POST call", async () => {
     post_resp = await baseURL
       .post(list_user_endpoint)
       .type("form")
       .send({
-        name: "Kwabena",
+        name: "John",
         job: "automation",
       })
       .set("Accept", "/application/json/");
@@ -20,8 +20,9 @@ describe("POST Request", () => {
     console.log(post_resp.body);
   });
 
-  it("The response should be code 201", async () => {
+  it("The response should be code 201", () => {
     expect(post_resp.status).to.equal(201);
     console.log(post_resp.status);
   });
+
 });

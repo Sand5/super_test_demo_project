@@ -5,7 +5,9 @@ const app = require("../data/index");
 let baseURL = supertest(app);
 let res;
 
-describe("GET /", () => {
+
+
+describe("GET/", () => {
   it("it should have a status code of 200", async () => {
     res = await baseURL.get("/");
     console.log(res.text);
@@ -23,4 +25,6 @@ describe("GET /", () => {
      expect(res.status).to.equal(200);
      console.log(res.body);
   });
+
+  
 });
