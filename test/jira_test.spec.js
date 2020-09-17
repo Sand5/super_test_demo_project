@@ -28,7 +28,7 @@ beforeEach(() => {
 
 describe("Jira Comments Test", () => {
   
-  it("I should be able to log into Jira", async () => {
+  it.skip("I should be able to log into Jira", async () => {
     res = await testSession
       .post(loginresource)
       .send({
@@ -59,7 +59,7 @@ describe("Jira Comments Test", () => {
       let usernameName = input.username;
       let expectedCode = input.expectedcode;
 
-      it("Test incorrect username and password types", async() => {
+      it.skip("Test incorrect username and password types", async() => {
       res =  await input.sesssion
       .post(loginresource)
       .send({
