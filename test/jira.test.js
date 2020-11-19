@@ -17,8 +17,8 @@ const inputs = [
   {
     sesssion: testSession,
     username: "sanderson_imbeah5@hotmail.com",
-    password: "Sandy82@",
-    expectedcode: 200,
+    password: "tested@",
+    expectedcode: 401,
   },
 ];
 
